@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 
 {% block page_content %}
-<div class="container-fluid">
-    <div class="jumbotron" style="height: 20%;"></div>
+<div class="container">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a href="#" class="navbar-brand">Home</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -10,16 +9,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link">About</a>
-                <a href="#" class="nav-item nav-link">Skills</a>
-                <a href="#" class="nav-item nav-link">Projects</a>
-                <a href="#" class="nav-item nav-link">Education</a>
-                <a href="#" class="nav-item nav-link">Experience</a>
-                <a href="#" class="nav-item nav-link">Contact Me</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skills" class="nav-item nav-link">Skills</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#education_experience" class="nav-item nav-link">Education</a>
+                <a href="#education_experience" class="nav-item nav-link">Experience</a>
+                <a href="#contact_me" class="nav-item nav-link">Contact Me</a>
             </div>
         </div>
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron" id="about">
         <h1 class="text-center">About Me</h1>
         <div class="box text-center">
             <a href="https://github.com/RasbeeTech" target="_blank">
@@ -36,56 +35,84 @@
             <li>Experience with performance focused, object- oriented and multi-threaded programming</li>
         </ul>
     </div>
-    <div class="jumbotron">
-        <h1>Skills</h1>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top" alt="python_logo">
-            <p class="card-text text-center">Python</p>
+    <div class="jumbotron" id="skills">
+        <h1 class="text-center">Skills</h1>
+        <p class="text-center"><small>Programming Languages & Tools</small></p>
+        <div class="row">
+            <div class="col-lg-2 col-sm-6 justify-content-center">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/python.png" class="card-img-top" alt="python_logo">
+                    <p class="card-text text-center">Python</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 justify-content-center">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/material-rounded/96/000000/django.png" class="card-img-top" alt="django_logo">
+                    <p class="card-text text-center">Django</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/flask.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Flask</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/javascript.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Javascript</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/swift.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Swift</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/html-5--v2.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">HTML</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/css3.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">CSS</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/bootstrap.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Bootstrap</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Java</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/doodle/96/000000/android--v2.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">AS</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/color/96/000000/xcode.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Xcode</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                <div class="card p-4 m-3" style="width: 130px;">
+                    <img src="https://img.icons8.com/officel/80/000000/console.png" class="card-img-top" alt="flask_logo">
+                    <p class="card-text text-center">Linux/Unix</p>
+                </div>
+            </div>
         </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/material-rounded/96/000000/django.png" class="card-img-top" alt="django_logo">
-            <p class="card-text text-center">Django</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/flask.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Flask</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/javascript.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Javascript</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/swift.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Swift</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/html-5--v2.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">HTML</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/css3.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">CSS</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/bootstrap.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Bootstrap</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Java</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/doodle/96/000000/android--v2.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Android Studio</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/color/96/000000/xcode.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Xcode</p>
-        </div>
-        <div class="card" style="width: 100px;">
-            <img src="https://img.icons8.com/officel/80/000000/console.png" class="card-img-top" alt="flask_logo">
-            <p class="card-text text-center">Linux/Unix</p>
-        </div>
+
 
         <!--<ul>
             <li><img src="https://img.icons8.com/color/48/000000/python.png"/><img src="https://img.icons8.com/color/96/000000/python.png"/><img src="https://img.icons8.com/color/144/000000/python.png"/>Python</li>
@@ -103,7 +130,7 @@
             <li><img src="https://img.icons8.com/officel/80/000000/console.png"/>Unix</li>
         </ul>-->
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="projects">
         <h1>Projects</h1>
         <div class="card-deck">
             <div class="card" style="width: 300px;">
@@ -111,6 +138,14 @@
           <div class="card-body text-center">
               <h5 class="card-title">myMinesweeper</h5>
               <p class="card-text">An application with a more modern take on the classic game of Minesweeper made available as Web and Desktop application.  </p>
+              <small>Tools:</small>
+              <span class="badge badge-pill badge-primary">Python</span>
+              <span class="badge badge-pill badge-primary">Flask</span>
+              <span class="badge badge-pill badge-primary">Javascript</span>
+              <span class="badge badge-pill badge-primary">HTML</span>
+              <span class="badge badge-pill badge-primary">Bootstrap</span>
+              <span class="badge badge-pill badge-primary">Tkinter</span>
+              <hr>
               <a href="https://github.com/RasbeeTech" target="_blank" class="btn btn-primary">View Project</a>
           </div>
         </div>
@@ -119,6 +154,11 @@
           <div class="card-body text-center">
               <h5 class="card-title">Loan Calculator</h5>
               <p class="card-text">App to calculate interest and principle amounts of a loan and display's the data in an easy to read graph format.</p>
+              <small>Tools:</small>
+              <span class="badge badge-pill badge-primary">Python</span>
+              <span class="badge badge-pill badge-primary">Tkinter</span>
+              <span class="badge badge-pill badge-primary">Matplotlib</span>
+              <hr>
               <a href="https://github.com/RasbeeTech" target="_blank" class="btn btn-primary">View Project</a>
           </div>
         </div>
@@ -127,18 +167,23 @@
           <div class="card-body text-center">
               <h5 class="card-title">Web Scraper</h5>
               <p class="card-text">A program that has the ability to scrape multiple websites for products and saves them in a csv file.</p>
+              <small>Tools:</small>
+              <span class="badge badge-pill badge-primary">Python</span>
+              <span class="badge badge-pill badge-primary">Selenium</span>
+              <span class="badge badge-pill badge-primary">BeautifulSoup4</span>
+              <hr>
               <a href="https://github.com/RasbeeTech" target="_blank" class="btn btn-primary">View Project</a>
           </div>
         </div>
         </div>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id="education_experience">
         <div class="row">
             <div class="col-lg-6">
                 <h1>Education</h1>
                 <h4>Computer Engineering Technology</h4>
                 <h5>Humber College: 09/2016 – 04/2109</h5>
-                <ul>
+                <ul style="padding-left: 20;">
                     <li>Course work in Data Structures and Algorithms</li>
                     <li>Manage and build projects using C, Java, MySQL, and Python</li>
                     <li>Perform tasks and code within Unix/Linux command-line interface</li>
@@ -148,7 +193,7 @@
                 <h1>Experience</h1>
                 <h4>Apple Inc.</h4>
                 <h5>Technical Support: 11/2020 – Present</h5>
-                <ul>
+                <ul style="padding-left: 20;">
                     <li>Research issues on various computer systems to resolve complaints, answer inquiries, and outline solutions</li>
                     <li>Provide thorough support and problem- solving resolution for customers</li>
                     <li>Consistent top performer amongst team</li>
@@ -156,7 +201,7 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron" style="height: 100%;">
+    <div class="jumbotron" id="contact_me" style="height: 100%;">
         <h1>Contact Me</h1>
         <p>Software development first started as a fun hobby and soon became a useful skill to simplify everyday tasks.  Having natural problem-solving ability and pattern recognition allow me to compose and troubleshoot algorithms. </p>
     </div>
