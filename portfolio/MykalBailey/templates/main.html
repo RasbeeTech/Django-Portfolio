@@ -201,9 +201,23 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron" id="contact_me" style="height: 100%;">
+    <div class="jumbotron" id="contact_me">
         <h1>Contact Me</h1>
         <p>Software development first started as a fun hobby and soon became a useful skill to simplify everyday tasks.  Having natural problem-solving ability and pattern recognition allow me to compose and troubleshoot algorithms. </p>
+        <form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="inputName" placeholder="Your name">
+                    </div>
+                    <div class="col-6">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Your email">
+                    </div>
+                </div>
+                <textarea class="form-control input" placeholder="Your message here" rows="5"></textarea>
+                <button type="button" class="btn btn-outline-dark btn-lg btn-block">Send</button>
+            </div>
+        </form>
     </div>
 </div>
 {% endblock %}
